@@ -31,7 +31,7 @@
   
   Array.prototype.transpose = function () {
     result = [];
-    for (var i = 0; i < this.length; i++) {
+    for (var i = 0; i < this[0].length; i++) {
       result.push([]);
     }
     
@@ -44,7 +44,7 @@
     return result;
   };
   
-  var arr = [[1, 2], [4, 5]];
+  var arr = [[1, 2, 3], [4, 5, 6]];
 
 
   
