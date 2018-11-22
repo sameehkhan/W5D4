@@ -17,7 +17,7 @@ Array.prototype.myMap = function(cb){
 };
  
 
-Array.prototype.myReduce = function(cb, acc = this[0]) {
+Array.prototype.myReduce = function(cb, acc) {
   
   if (acc == undefined) {
     var i = 1; 
@@ -27,7 +27,7 @@ Array.prototype.myReduce = function(cb, acc = this[0]) {
       result = acc;
   }
     
-  var i = 1
+
   while (i < this.length) {
     acc = cb(acc, this[i]);
     i++;
