@@ -19,6 +19,15 @@ Array.prototype.bubbleSort = function (){
 
 // [4, 3, 2, 6, 9, 8].bubbleSort();
 
-Array.prototype.bubbleSort = function () {
+String.prototype.substrings = function () {
+  var result = [];
   
-}
+  for(var i =0; i < this.length -1; i++) {
+    for(var j = i + 1; j < this.length; j++) {
+        result.push(this.slice(i, j+1));
+    }
+  }
+  return result;
+};
+
+"apple".substrings()
